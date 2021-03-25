@@ -26,6 +26,8 @@ import PackageDescription
              name: "GeoFire",
              dependencies: [
                 .product(name: "FirebaseDatabase", package: "Firebase")
+             ], cSettings: [
+                .headerSearchPath("include"), // 5
              ]
          ),
          .testTarget(
